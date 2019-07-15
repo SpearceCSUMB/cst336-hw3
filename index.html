@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Weather or Not!  </title>
+    <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="headDesign">
+      <img src="img/transSun2.png" alt="Picture of sun"/><h1> Weather to your liking! </h1>
+    </div>
+    <hr />
+    <div id="formStyle">
+      <p>
+        All you need to do is enter your zipcode and click "Update Info" and your 
+        local weather will be displayed. Then if you prefer to read the weather in Kelvin, Celsius, or Fahrenheit
+        you have the option of selecting which to display after you have entered your zip!
+      </p>
+    </div>
+    <form id="searchForm">
+      Zip Code:<input type="number" id="zip" name="zip" placeholder="Ex: 90210"><input id="sub" type="button" value="Update Info"><br>
+    </form>
+    <div id="formStyle">
+      <table id=tableSet align=center>
+        <tr>
+          <td> City: </td>
+          <td> <span id="city"></span> </td>
+        </tr>
+        <tr>
+          <td> Lat: </td>
+          <td> <span id="lat"></span> </td>
+        </tr>
+        <tr>
+          <td> Lon: </td>
+          <td> <span id="lon"></span> </td>
+        </tr>
+        <tr>
+          <td> High: </td>
+          <td> <span id="high"></span </td>
+        </tr>
+        <tr>
+          <td>Current: </td>
+          <td> <span id="curr"></span> </td>
+        </tr>
+        <tr>
+          <td> Low: </td>
+          <td> <span id="low"></span> </td>
+        </tr>
+        <tr>
+          <td> Humidity: </td>
+          <td> <span id="hum"></span> </td>
+        </tr>
+        <tr>
+          <td> Wind Speed: </td>
+          <td> <span id="windSpeed"></span> </td>
+        </tr>
+        <tr>
+          <td> Wind Direction: </td>
+          <td> <span id="windDirection"></span> </td>
+        </tr>
+        <tr>
+          <td> Outside View: </td>
+          <td> <span id="weatherType"></span> </td>
+        </tr>
+      </table><br><br>
+      <input id="kel" type="button" value="Kelvin"> 
+      <input id="cel" type="button" value="Celsius"> 
+      <input id="fah" type="button" value="Fahrenheit"><br>
+      <span id=errorOutput></span>
+      <br><br><br><br>
+    </div>
+      <hr />
+      <footer>
+          CST336 Internet Programming. 2019&copy; Pearce <br />
+          California State University Monterey Bay <br />
+          The information presented in this website is used for academic purposes only. <br />
+          No processors were harmed in the making of this website.
+      </footer>
+    <script src="js/api.js"></script>
+  </body>
+</html>

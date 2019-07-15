@@ -1,0 +1,63 @@
+h1 {
+   font-size: 45px;
+   font-family: 'Black Ops One', cursive;
+   -webkit-text-stroke: .5px black;
+   color: #D4353F;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+#searchForm {
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  weight: 50%;
+}
+body {
+  text-align: center;
+  background-color: #35D4CA;
+}
+#city, #lat, #lon,
+#high, #curr, #low,
+#hum, #windSpeed,
+#windDirection, 
+#weatherType {
+  font-size: 15px;
+}
+#sub, #kel,
+#cel, #fah {
+  padding: 7px 7px !important;
+  margin: 0px 2px;
+  color: black;
+  border: 1px solid black;
+  background-color: #D4353F;
+}
+#formStyle {
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  
+}
+#tableSet {
+  text-align: left;
+  border: 1px solid black;
+  background-color: #35E6DB;
+}
+footer {
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  margin: auto;
+}
+hr {
+  border: 5px solid #D4353F;
+  border-radius: 2px;
+}
+#zip {
+  background-color: #35E6DB;
+}
+#headDesign {
+  float: center;
+  justify-content: center;
+  margin: auto;
+}
